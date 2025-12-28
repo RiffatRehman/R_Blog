@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup - Blog App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font Awesome for Google Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Blogs</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="auth-container">
-        <h2>Signup</h2>
-        <form id="signupForm">
-            <input type="text" id="name" placeholder="Full Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password (min 6 chars)" required>
-            <button type="submit">Signup</button>
-        </form>
-        <button id="googleSignUp"><i class="fa-brands fa-google"></i> Signup with Google</button>
-        <p>Already have an account? <a href="login.html">Login</a></p>
+
+<header>
+    <nav class="navbar">
+         <div class="logo">
+        <img src="./images/logo-removebg-preview.png" style="width: 100px; height: 50px;" alt="">_BLOG
     </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="all-blogs-section">
+    <h2>All Blogs</h2>
+    <div id="all-blogs-container" class="all-blogs-container">
+        <!-- JS will inject blogs here -->
+    </div>
+</section>
 <!-- Footer Section -->
 <footer class="site-footer">
   <div class="footer-container">
@@ -67,9 +72,9 @@
 </footer>
 
 
-    <!-- Firebase + JS -->
-    <script type="module" src="js/firebase.js"></script>
-    <script type="module" src="js/auth.js"></script>
-    <script type="module" src="js/signup.js"></script>
+
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/all-blogs.js"></script>
 </body>
 </html>

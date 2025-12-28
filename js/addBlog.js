@@ -52,7 +52,10 @@ addBlogForm.addEventListener('submit', async (e)=>{
     category,
     imageUrl,
     author: auth.currentUser.displayName || "Unknown Author",  
-    createdAt: serverTimestamp()
+    createdAt: serverTimestamp(),
+    
+ 
+
 });
 
         alert("Blog added successfully!");

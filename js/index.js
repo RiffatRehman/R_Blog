@@ -55,7 +55,7 @@ async function fetchBlogs(){
     // Recent Blogs - Latest 3
     // -------------------------------
     recentContainer.innerHTML = "";
-    blogs.slice(0,3).forEach(blog => {
+    blogs.slice(0,8).forEach(blog => {
         const div = document.createElement('div');
         div.classList.add('recent-blog-item');
         div.innerHTML = `
@@ -115,3 +115,6 @@ const navLinks = document.querySelector(".nav-links");
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
+
+
+ 
